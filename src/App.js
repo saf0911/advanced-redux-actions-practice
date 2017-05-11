@@ -16,12 +16,13 @@ import SortUsers from "./components/SortUsers";
 import ScaleVideo from "./components/ScaleVideo";
 import Modal from "./components/Modal";
 import ShowModal from "./components/ShowModal";
+import CounterButtonContainer from "./components/CounterButtonContainer"
 
 function App() {
   return (
       <div className="App">
         <div className="container">
-          <CounterButton />
+          <CounterButtonContainer />
           <br />
           <SpecialTextBox />
           <br />
@@ -52,8 +53,8 @@ function App() {
           <br />
           <VideoPlayer />
           <br />
-          
-          
+
+
         </div>
         <div className="container">
           <Users />

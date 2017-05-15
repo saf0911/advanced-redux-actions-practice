@@ -1,5 +1,10 @@
 import state from "../state";
 import {combineReducers} from "redux";
+import {
+  INCREASE_COUNTER,
+  DECREASE_COUNTER
+} from "../actions";
+
 
 
 const {
@@ -21,12 +26,16 @@ const initialState = {
 
 
 function currentCounter(state=initialState.value, action){
-  if(action.type === "INCREASE_COUNTER"){
 
+  switch(action.type){
+    case INCREASE_COUNTER:
+      return state + 1;
+    case DECREASE_COUNTER:
+        return state - 1;
   }
-  if(action.type === "DECREASE_COUNTER"){
 
-  }
+
+
   return state;
 }
 

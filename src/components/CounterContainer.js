@@ -1,22 +1,19 @@
 import React from "react";
 import  {connect} from "react-redux";
 import Counter from "./Counter";
-import changeCount from "../actions";
+import currentCounter from "../actions";
 
 
 const mapStateToProps = state => {
-  return{}
+  return {
+    count: state.currentCounter
+   };
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    counter: () => dispatch(changeCount())
-  }
-}
 
 
+const CounterContainer = connect(
+   mapStateToProps,
+ )(Counter);
 
-export default connect (
-  mapStateToProps,
-  mapDispatchToProps,
-)(Counter)
+ export default CounterContainer;

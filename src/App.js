@@ -16,6 +16,8 @@ import SortUsers from "./components/SortUsers";
 import ScaleVideo from "./components/ScaleVideo";
 import Modal from "./components/Modal";
 import ShowModal from "./components/ShowModal";
+import CounterContainer from "./components/CounterContainer";
+import SpecialTextContainer from "./components/SpecialTextContainer"
 
 
 function App() {
@@ -43,8 +45,9 @@ function App() {
           <ShowModal />
         </div>
         <div className="container">
-          <Counter />
+          <CounterContainer />
           <br />
+          <SpecialTextContainer />
           <SpecialText />
           <br />
           <CurrentCity />

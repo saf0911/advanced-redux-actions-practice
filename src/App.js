@@ -1,5 +1,5 @@
 import React from 'react';
-import CounterButton from "./components/CounterButton";
+import CounterButtonContainer from "./components/CounterButtonContainer";
 import SpecialTextBox from "./components/SpecialTextBox";
 import Counter from "./components/Counter";
 import SpecialText from "./components/SpecialText";
@@ -16,7 +16,7 @@ import SortUsers from "./components/SortUsers";
 import ScaleVideo from "./components/ScaleVideo";
 import Modal from "./components/Modal";
 import ShowModal from "./components/ShowModal";
-import CounterButtonContainer from "./components/CounterButtonContainer"
+
 
 function App() {
   return (

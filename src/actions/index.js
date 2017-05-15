@@ -43,6 +43,14 @@ export function removeUser(){
   }
 }
 
+export const CHANGE_COUNT = "CHANGE_COUNT"
+
+export function changeCount() {
+  return {
+    type: CHANGE_COUNT
+  }
+}
+
 
 
 

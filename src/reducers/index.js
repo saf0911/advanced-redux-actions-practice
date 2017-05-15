@@ -35,10 +35,9 @@ function currentCounter(state=initialState.value, action){
       return state - 1;
   }
 
-
-
   return state;
 }
+
 
 function usersReducer(state =[], action){
   if(action.type === "ADD_USER"){
@@ -51,7 +50,7 @@ function usersReducer(state =[], action){
 }
 
 
-function specialTexter(state =[], action){
+function specialTexter(state = "", action){
   if(action.type === "SET_SPECIAL_TEXT"){
     return action.value;
   }

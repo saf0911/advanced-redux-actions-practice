@@ -1,19 +1,20 @@
 import React from "react";
 import  {connect} from "react-redux";
 import SpecialText from "./SpecialText";
-import setSpecialText from "../actions";
+import specialTexter from "../actions";
+
 
 const mapStateToProps = state => {
   return{
-    text: state.setSpecialText
+    text: state.specialTexter
   };
 }
 
 
 
-
-
-export default connect (
+const SpecialTextContainer = connect(
   mapStateToProps,
+)(SpecialText);
 
-)(SpecialText)
+
+export default SpecialTextContainer;

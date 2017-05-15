@@ -2,7 +2,8 @@ import state from "../state";
 import {combineReducers} from "redux";
 import {
   INCREASE_COUNTER,
-  DECREASE_COUNTER
+  DECREASE_COUNTER,
+  SET_SPECIAL_TEXT
 } from "../actions";
 
 
@@ -31,7 +32,7 @@ function currentCounter(state=initialState.value, action){
     case INCREASE_COUNTER:
       return state + 1;
     case DECREASE_COUNTER:
-        return state - 1;
+      return state - 1;
   }
 
 
